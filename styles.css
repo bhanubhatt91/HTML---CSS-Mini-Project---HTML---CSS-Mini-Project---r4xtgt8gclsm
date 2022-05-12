@@ -1,1 +1,84 @@
+.navbar button{
+    border-radius: 12px;
+    background-color: black;
+    color: whitesmoke;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
 
+}
+.logo{
+    color:aquamarine;
+    font-size: 30px;
+}
+.logo h2 span{
+    color: black;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+nav ul li a{
+    text-transform: uppercase;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: rgb(43, 127, 116);
+    
+
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(211, 47, 85);
+    text-transform: uppercase;
+    
+}
+
+.black-coloured-card{
+    background-color: black;
+    color: white;
+    
+}
+.white-coloured-card{
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
+.car-card{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 14px;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin:4% auto; 
+    
+    
+}
+.car-card div{
+    width:60%;
+    font-weight: bold;
+}
+.car-card img{
+    border-radius: 14px;
+}
+.container{
+    width:100vw;
+    height: 100vh;
+    
+}
+.master-container{
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    background-image: url(./header-image.jpeg);
+    background-size: 100%;
+}
