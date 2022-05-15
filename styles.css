@@ -177,7 +177,7 @@ nav ul li a:hover{
   }
   .master-container {
     background-color: black;
-    background-image: url(./header-img.jpg);
+    background-image: url(./images/header-img.jpg);
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
@@ -190,4 +190,28 @@ nav ul li a:hover{
     margin: 0;
     height: 100vh;
     padding: 0;
+  }
+  .car-page-container{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+  }
+  .car-page-container a{
+    color: white ;
+  }
+  .car-models{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .model{
+    border: 1px solid white;
+    margin: auto;
+  }
+  .details-company{
+    padding:0px 40px;
+    
+  }
+  .official-web{
+    margin:10px 0px;
   }
