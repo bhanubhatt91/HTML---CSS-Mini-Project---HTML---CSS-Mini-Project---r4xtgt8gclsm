@@ -203,10 +203,20 @@ nav ul li a:hover{
   .car-models{
     display: flex;
     justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    
+
   }
   .model{
+    display: flex;
+    flex-direction: column;
     border: 1px solid white;
-    margin: auto;
+    margin: 12px;
+    align-items: center;
+    padding: 10px 0;
+    
   }
   .details-company{
     padding:0px 40px;
@@ -215,3 +225,8 @@ nav ul li a:hover{
   .official-web{
     margin:10px 0px;
   }
+  .model a{
+    text-decoration: none;
+    padding-top:7px;
+  }
+  
