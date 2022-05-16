@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   background: black;
-  font-size: 20px;
+  font-size: 15px;
 }
 .navbar button {
   border-radius: 12px;
@@ -12,24 +12,32 @@
   height: 30px;
   margin-left: 40px;
 }
+
 nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
   padding-left: 10%;
   padding-right: 10%;
+  
   box-shadow: 0 5px 30px 2px rgb(47, 132, 201);
 }
+
 nav div{
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
+
 .logo {
   color: aquamarine;
   font-size: 30px;
+  margin: 12px 0;
+  
 }
 .logo span {
   color: white;
@@ -51,6 +59,8 @@ nav ul li a:hover {
 }
 
 .black-coloured-card {
+  display: flex;
+  flex-direction: column;
   background-color: black;
   color: white;
 }
@@ -59,6 +69,8 @@ nav ul li a:hover {
 }
 
 .white-coloured-card {
+  display: flex;
+  flex-direction: column-reverse;
   background-color: white;
   color: black;
   opacity: 1;
@@ -68,25 +80,27 @@ nav ul li a:hover {
 }
 
 .car-card {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   width: 50%;
   min-height: 30%;
   border: 2px solid black;
   border-radius: 14px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 5% auto;
 }
 
 .car-card a{
   text-decoration: none;
+
 }
 
-@media (max-width: 767px) {
+
+/* @media (max-width: 767px) {
   .car-card {
     flex-direction: column;
   }
-}
+} */
 
 .car-card div {
   width: 60%;
@@ -148,4 +162,24 @@ body {
   text-decoration: none;
   padding-top: 7px;
   color: white;
+}
+@media screen and (min-width:1024px) {
+  nav div{
+    flex-direction: row;
+  }
+  nav{
+    flex-direction: row;
+    
+  }
+  
+  .navbar{
+    font-size: 20px;
+  }
+  .black-coloured-card{
+    flex-direction: row;
+
+  }
+  .white-coloured-card{
+    flex-direction: row;
+  }
 }
