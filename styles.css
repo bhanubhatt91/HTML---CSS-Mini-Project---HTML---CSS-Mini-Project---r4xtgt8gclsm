@@ -5,12 +5,13 @@
   font-size: 15px;
 }
 .navbar button {
-  border-radius: 12px;
+  border-radius: 10px;
   background-color: black;
   color: whitesmoke;
   width: 100px;
   height: 30px;
-  margin-left: 40px;
+  margin: 0 0 20px 0;
+  border: 1px white solid;
 }
 
 nav {
@@ -21,23 +22,20 @@ nav {
   padding-top: 15px;
   padding-left: 10%;
   padding-right: 10%;
-  
   box-shadow: 0 5px 30px 2px rgb(47, 132, 201);
 }
 
-nav div{
+nav div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-
 .logo {
   color: aquamarine;
   font-size: 30px;
   margin: 12px 0;
-  
 }
 .logo span {
   color: white;
@@ -64,7 +62,7 @@ nav ul li a:hover {
   background-color: black;
   color: white;
 }
-.black-coloured-card a{
+.black-coloured-card a {
   color: white;
 }
 
@@ -75,37 +73,28 @@ nav ul li a:hover {
   color: black;
   opacity: 1;
 }
-.white-coloured-card a{
+.white-coloured-card a {
   color: black;
 }
 
 .car-card {
-  /* display: flex; */
   align-items: center;
-  width: 50%;
+  width: 80%;
   min-height: 30%;
   border: 2px solid black;
   border-radius: 14px;
-  /* justify-content: space-between; */
-  margin: 5% auto;
+  margin: 10% auto;
 }
 
-.car-card a{
+.car-card a {
   text-decoration: none;
-
 }
-
-
-/* @media (max-width: 767px) {
-  .car-card {
-    flex-direction: column;
-  }
-} */
 
 .car-card div {
-  width: 60%;
-  font-weight: bold;
-  padding: 20px;
+  width: 80%;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 14px;
 }
 .car-card img {
   border-radius: 14px;
@@ -124,62 +113,73 @@ body {
   height: 100vh;
   padding: 0;
 }
-.car-page-container{
+.car-page-container {
   text-align: center;
   color: white;
   background-color: black;
   font-size: 20px;
 }
-.car-page-container h1{
+.car-page-container h1 {
   margin: 30px 0;
 }
-.car-models{
+.car-models {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
   margin: auto;
   flex-wrap: wrap;
 }
-.model{
+.model {
   display: flex;
   flex-direction: column;
   border: 1px solid white;
   margin: 15px;
   align-items: center;
   padding: 10px 0;
-
+  width: 40%;
 }
-.details-company{
+.details-company {
   padding: 20px 40px;
 }
-.official-web{
+.official-web {
   margin: 10px 0px 30px 0;
 }
-.official-web a{
+.official-web a {
   color: white;
 }
-.model a{
+.model a {
   text-decoration: none;
   padding-top: 7px;
   color: white;
 }
-@media screen and (min-width:1024px) {
-  nav div{
+
+@media screen and (min-width: 1024px) {
+  nav div {
     flex-direction: row;
   }
-  nav{
+  nav {
     flex-direction: row;
-    
   }
-  
-  .navbar{
+  .navbar {
     font-size: 20px;
   }
-  .black-coloured-card{
-    flex-direction: row;
-
+  .navbar button {
+    margin: 0 0 0 40px;
   }
-  .white-coloured-card{
+  .car-card {
+    width: 50%;
+    margin: 5% auto;
+  }
+  .car-card div {
+    width: 60%;
+    font-weight: bold;
+    padding: 20px;
+  }
+  .black-coloured-card,
+  .white-coloured-card {
     flex-direction: row;
+  }
+  .model {
+    width: 30%;
   }
 }
